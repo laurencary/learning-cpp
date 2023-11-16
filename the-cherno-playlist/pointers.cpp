@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define LOG(x) std::cout << x << std::endl
+#define LOG(x) std::cout << x << std::endl //#define preprocessors are called macros and can be used for contants as well
 
 
 int main() {
