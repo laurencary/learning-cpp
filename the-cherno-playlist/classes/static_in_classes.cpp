@@ -3,7 +3,7 @@
 struct Entity
 {
     int x,y;
-    static int z;
+    static int z; // static = class variable
 
     void Print()
     {
