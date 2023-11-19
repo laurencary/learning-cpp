@@ -18,4 +18,9 @@ int main()
     std::array<int, 5> third;
 
     delete[] another;
+
+
+    // can also use implicit type conversion
+    // auto doesn't work for arrays
+    float temperature[] = { 80.1, 50.6, 31.7 };
 }

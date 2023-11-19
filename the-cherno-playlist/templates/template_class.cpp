@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
 // kind of like metaprogramming
-
-
 // class array created on the stack
 template<typename T, int N>
 class Array
