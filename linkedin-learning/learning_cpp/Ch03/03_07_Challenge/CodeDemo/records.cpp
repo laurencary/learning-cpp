@@ -4,8 +4,12 @@
 Student::Student(int the_id, std::string the_name)
     : id(the_id), name(the_name) {}
 
-// Student::get_id() 
-// {
-//     return id;
-// }
+int Student::get_id() 
+{
+    return id;
+}
 
+std::string Student::get_name()
+{
+    return name;
+}

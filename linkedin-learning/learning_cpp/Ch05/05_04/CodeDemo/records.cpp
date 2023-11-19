@@ -56,6 +56,10 @@ void StudentRecords::add_grade(int sid, int cid, char grade){
 	grades.push_back(Grade(sid, cid, grade));
 }
 
+void StudentRecords::report_card(int sid){
+	cout << get_student_name(sid) << "'s Report Card" << endl;
+}
+
 float StudentRecords::get_num_grade(char letter){
 	float num_grd;          // float for the numeric grade
 	switch (letter){

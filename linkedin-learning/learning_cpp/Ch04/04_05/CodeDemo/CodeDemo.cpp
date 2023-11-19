@@ -26,11 +26,20 @@ int main(){
 	cout << "Enter a student ID: ";
 	cin >> id;
 
-	// Calculate the GPA for the selected student.
-	// Write your code here
+	float totalPoints = 0.0f;
+	float totalCredits = 0.0f;
+
+	for (Grade& grade : grades)
+	{
+		if (grade.get_student_id() == id) 
+		{
+			cout << grade.get_grade() << endl;
+		}
+	}
+
 
 	string student_str;
-	student_str = students[0].get_name(); // Change this to the selected student's name
+	student_str = students[id].get_name(); // Change this to the selected student's name
 
 	cout << "The GPA for " << student_str << " is " << GPA << endl;
 	return (0);
